@@ -1,0 +1,197 @@
+
+body {
+	background-image: url(../images/fondo3.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.9;
+}
+header {
+	height: 50vh;
+	grid-column: 1/span3;
+}
+main {
+	height: 90vh;
+}
+footer {
+	height: 30vh;
+	grid-column: 1/span3;
+}
+.tituloprincipal {
+	text-align: center;
+	font-size: 300%;
+	font-weight: bolder;
+	font-family: $font-family_1;
+	line-height: 1.9;
+	border-style: double;
+	border-top: double 7px #444440;
+	border-right: double 7px #444440;
+	border-left: double 7px #444440;
+	border-bottom: double 7px #444440;
+	border-width: 20px;
+	color: $color_1;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	text-align: justify;
+	font-size: 130%;
+	font-weight: bold;
+	font-family: $font-family_1;
+	line-height: 1.5;
+	color: $color_1;
+}
+#titulonosotros {
+	text-align: center;
+	font-weight: bold;
+	color: $color_2;
+	background-color: $background-color_1;
+	width: 100%;
+}
+#nosotros {
+	border-style: solid;
+	border-color: $border-color_1;
+	border-width: 10px;
+	text-align: center;
+	font-family: $font-family_1;
+	line-height: 1;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+#logo {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+#fotoinicio1 {
+	align-content: center;
+	padding-top: 30px;
+	padding-left: 380px;
+	padding-right: 380px;
+	padding-bottom: 60px;
+}
+ul {
+	list-style: none;
+	font-size: 0;
+}
+li {
+	display: inline-block;
+	width: 20%;
+	position: relative font-size: 40px;
+}
+#titulonuestracarta {
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+	color: $color_3;
+}
+#carta {
+	padding-top: 0px;
+	padding-bottom: 50px;
+	padding-left: 300px;
+}
+#sugerencia {
+	text-align: center;
+	font-family: $font-family_1;
+	font-size: large;
+}
+.gridcontainer {
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: repeat(3, 150px);
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+	>* {
+		background-color: $background-color_2;
+		border: 1px solid black;
+		text-align: center;
+		color: $color_4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 600px); {
+	aside {
+		text-align: center;
+		font-weight: bold;
+		font-size: 50px;
+		color: $color_3;
+	}
+	article {
+		grid-column {
+			&: {
+				1 {
+					/ {
+						span3; {
+							} {
+								#tituloeventos {
+									text-align: center;
+									font-weight: bold;
+									font-size: 50px;
+									color: $color_3;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.grid {
+		display: grid;
+		grid-area: auto;
+		grid-template-columns: 150px 150px;
+		grid-template-rows: 150px 150px;
+		justify-content: space-evenly;
+		align-content: center;
+		font-size: 30px;
+	}
+	#titulocartelera {
+		text-align: center;
+		font-weight: bold;
+		font-size: 50px;
+		color: $color_3;
+	}
+	#col {
+		color: $color_5;
+	}
+	#titulocontacto {
+		text-align: center;
+		font-weight: bold;
+		font-size: 50px;
+		color: $color_3;
+	}
+	#reservas {
+		text-align: center;
+		color: $color_5;
+		text-shadow: #444440;
+		font-size: 50px;
+		font-style: italic;
+	}
+	footer {
+		position: fixed;
+		display: flex;
+		justify-content: space-evenly;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		border-top: 2px solid #444440;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: #847c7c;
+		background: #847c7c z-index: index 2000;
+		opacity: 0.7;
+	}
+	.col {
+		color: $color_5;
+		align-items: center;
+	}
